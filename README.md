@@ -1,7 +1,26 @@
+user_console_launch_instance_test
+=================================
+
+## Desciption
+
+Launch an instance under the default setup on User Console and terminate the instance immediately
+
+## Procedure
+
+1. SSH into the In-house Selenium Remote Server Machine
+
+2. Run the testcase "launch_instanse_basic" for the se34euca command "runtest_instances.py" for first 2 non-admin users in the file "../share/ui-test-dir/ui-test-user-info.txt"
+
+3. Using the se34euca command "run_test_view_page.py"'s option "get_dashboard_source" to verify that the instances are running.
+
+4. Run the testcase" terminate_instance_basic" to terminate the instances.
+
+5. similar to the step 3. above, verify that the instances are terminated.
+
+
 # Eucalyptus Testunit Framework
 
 Eucalyptus Testunit Framework is designed to run a list of test scripts written by Eucalyptus developers.
-
 
 
 ## How to Set Up Testunit Environment
